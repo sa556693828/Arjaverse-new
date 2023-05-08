@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Flex, Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -10,6 +10,8 @@ import { AccountContext } from "../components/Provider";
 //TODO: add animation
 
 export default function Main() {
+
+
   const { ifAddressHasNFT } = useContext(AccountContext);
   const { address } = useAccount();
   const router = useRouter();

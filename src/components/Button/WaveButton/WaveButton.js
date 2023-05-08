@@ -11,8 +11,8 @@ export default function WaveButton(props) {
       fontSize={{ base: "20px", sm: "30px" }}
       height={{ base: "50px", sm: "70px" }}
       borderRadius={{ base: "25px", sm: "35px" }}
-      border={{ base: "6px solid #425673", sm: "8px solid #425673" }}
-      color="#425673"
+      border={{ base: "6px solid #EC6F91", sm: "8px solid #EC6F91" }}
+      color="#fff"
       width={{ base: "100%", sm: "300px" }}
       onClick={() => props.fun()}
       overflow="hidden"

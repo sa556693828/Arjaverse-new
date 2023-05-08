@@ -63,7 +63,7 @@ export default function Main() {
               width={{ base: "80%", sm: "80%" }}
               display={{ base: "flex", sm: "80px" }}
               alignItems={'center'}
-              flexDirection={{ base: "column", sm: "column" , md: "row" }}
+              flexDirection={{ base: "column", sm: "column", md: "row" }}
               justifyContent="center"
               zIndex={20}
             >

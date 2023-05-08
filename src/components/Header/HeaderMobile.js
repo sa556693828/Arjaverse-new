@@ -20,6 +20,7 @@ import { useAccount } from "wagmi";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useEns } from "../../hooks/useEns.js";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import { AiOutlineRight } from "react-icons/ai";
 
 export default function Mobile(props) {
   const ethIcon =
@@ -49,161 +50,17 @@ export default function Mobile(props) {
       </Flex>
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent bgColor="#B5E0E9">
-          <DrawerHeader bgColor="#B5E0E9">
-            {address ? (
-              <div className="flex justify-around text-darkBlue text-lg h-16 items-center">
-                <ConnectButton.Custom>
-                  {({ openAccountModal, openChainModal }) => {
-                    return (
-                      <Flex>
-                        <Box
-                          as="button"
-                          bg="white"
-                          rounded={"2xl"}
-                          h="43px"
-                          w={"80px"}
-                          _hover={{ bg: "white" }}
-                          display="flex"
-                          justifyContent="center"
-                          gap="3"
-                          alignItems="center"
-                          className="shadow-xl"
-                          onClick={() => openChainModal()}
-                        >
-                          <img src={ethIcon} />
-                          <ChevronDownIcon />
-                        </Box>
-                        <Box
-                          as="button"
-                          h="43px"
-                          w={"140px"}
-                          display="flex"
-                          justifyContent="center"
-                          gap="3"
-                          alignItems="center"
-                          marginLeft={"16px"}
-                          rounded={"2xl"}
-                          _hover={{ bg: "white" }}
-                          className="shadow-xl bg-white rounded-2xl p-2"
-                          onClick={() => openAccountModal()}
-                        >
-                          {ens
-                            ? ens
-                            : address.slice(0, 4) +
-                              "..." +
-                              address.slice(38, 42)}
-                          <ChevronDownIcon />
-                        </Box>
-                      </Flex>
-                    );
-                  }}
-                </ConnectButton.Custom>
-              </div>
-            ) : (
-              <div className="mt-4 flex justify-center text-xl">
-                <div className="rounded-2xl bg-[#0E76FD] p-3 text-white">
-                  <ConnectButton chainStatus="icon" showBalance={false} />
-                </div>
-              </div>
-            )}
-          </DrawerHeader>
-          <Divider className="mb-2" bg="transparent" />
-          <DrawerBody bg={"linear-gradient(#B5E0E9, #CEE2D6 80%)"} mt="1">
-            {address ? (
-              <div className="w-full">
-                <Center h={"50px"}>
-                  <Button
-                    width={"100%"}
-                    bgColor="#B5E0E9"
-                    color="cyan.800"
-                    onClick={() => {
-                      goPage("/mint");
-                      onClose();
-                    }}
-                    className="drop-shadow-xl"
-                  >
-                    Go To Mint
-                  </Button>
-                </Center>
-                <Center h={"50px"}>
-                  <Button
-                    width={"100%"}
-                    bgColor="#B5E0E9"
-                    disabled={!ifAddressHasNFT}
-                    opacity={ifAddressHasNFT ? "1" : "0.5"}
-                    cursor={ifAddressHasNFT ? "pointer" : "not-allowed"}
-                    color="cyan.800"
-                    className="drop-shadow-xl"
-                    onClick={() => {
-                      goPage("/profile");
-                      onClose();
-                    }}
-                  >
-                    My NFTs
-                  </Button>
-                </Center>
-                <Center h={"50px"}>
-                  <Button
-                    width={"100%"}
-                    bgColor="#B5E0E9"
-                    color="cyan.800"
-                    className="drop-shadow-xl"
-                    onClick={() => {
-                      goPage("/show");
-                      onClose();
-                    }}
-                  >
-                    ShowRoom
-                  </Button>
-                </Center>
-                <Center h={"50px"}>
-                  <Button
-                    width={"100%"}
-                    bgColor="#B5E0E9"
-                    color="cyan.800"
-                    className="drop-shadow-xl"
-                    onClick={() => {
-                      window.open("https://opensea.io/zh-TW/collection/arjaverse-nft", "_blank");
-                      onClose();
-                    }}
-                  >
-                    Opensea
-                  </Button>
-                </Center>
-              </div>
-            ) : (
-              <></>
-            )}
-          </DrawerBody>
-          <DrawerFooter
-            bg="#CEE2D6"
-            justifyContent="center"
-            onClick={() => {
-              goPage("/");
-              onClose();
-            }}
+        <DrawerContent className="bg-gradient-to-b flex items-center from-[#D0F3FF] via-[#E1F7FF] to-[#FEE3ED]">
+
+          <div className="w-[] 	h-14 bg-gradient-to-r from-[#FE87BD] to-[#79A0EB] flex items-center  justify-center text-2xl	 font-medium	rounded-[14px]"
           >
-            <Flex
-              gap={{ base: "1", sm: "3" }}
-              align="center"
-              justifyContent="space-evenly"
-            >
-              <Image
-                src={Logo.src}
-                width={{ base: "50px", sm: "60px", md: "auto" }}
-                height={{ base: "40px", sm: "auto", md: "auto" }}
-              />
-              <Box
-                className="strokeText"
-                data-storke="Arjaverse!"
-                id="title"
-                lineHeight="25px"
-              >
-                Arjaverse!
-              </Box>
-            </Flex>
-          </DrawerFooter>
+            Connect Wallet
+            <AiOutlineRight />
+          </div>
+
+
+          <div className="w-full bg-[#FE87BD]">Go to mint</div>
+
         </DrawerContent>
       </Drawer>
     </>

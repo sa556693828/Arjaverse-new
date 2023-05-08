@@ -27,7 +27,7 @@ export default function Main() {
         zIndex="3"
       >
         Into The <br />
-        <div className="strokeText" data-storke="Arjaverse!" id="title">
+        <div className="strokeText" data-stroke="Arjaverse!" id="title">
           Arjaverse!
         </div>
       </Box>

@@ -114,7 +114,7 @@ export default function ProfilePage() {
               <Box display="flex" alignItems="flex-end" marginTop="-30px">
                 <Box
                   className="strokeText"
-                  data-storke={amount}
+                  data-stroke={amount}
                   id="title"
                   fontSize={{ base: "90px !important", sm: "120px !important" }}
                   lineHeight={{ base: "100px", sm: "120px" }}

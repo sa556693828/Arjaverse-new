@@ -57,7 +57,7 @@ export default function ProfilePage() {
           w={"100%"}
           pt={6}
           className="strokeText text-2xl"
-          data-storke={tilte}
+          data-stroke={tilte}
           color={"yellow"}
           justify={"center"}
           textAlign={"center"}

@@ -1,8 +1,8 @@
-import React, { useState, useCallback, useEffect, useRef } from "react";
-import { Box, Alert, AlertIcon, AlertTitle } from "@chakra-ui/react";
+import React, { useState, useEffect, useRef } from "react";
+import { Box } from "@chakra-ui/react";
 import ContentBg from "../../components/Background/ContentBg";
 import Wave3 from "../../components/Background/Wave3";
-import { useSignMessage, useAccount } from "wagmi";
+import { useAccount } from "wagmi";
 import axios from "axios";
 import moment from "moment";
 import ModalQuestion from "../../components/Modal/Modal";
@@ -12,6 +12,7 @@ export default function ProfilePage() {
   const modalRef = useRef();
   // 帳戶
   const { isConnected, address } = useAccount();
+
   // 簽章資料
   const [signData, setSignData] = useState();
   // 截止/發放日期
@@ -159,7 +160,8 @@ export default function ProfilePage() {
                 textAlign="center"
                 marginBottom="20px"
               >
-                This account has already answered, waiting for verification... <br />
+                This account has already answered, waiting for verification...{" "}
+                <br />
                 {/* 發放時間： {moment(deadline).format("YYYY/MM/DD , h:mm")} */}
               </Box>
             )
@@ -210,9 +212,12 @@ export default function ProfilePage() {
               fontSize={{ base: "16px", sm: "24px" }}
               lineHeight={{ base: "24px", sm: "45px" }}
             >
-              1. N ➜ 1,  N Transactions can package into 1 transaction and achieve many people free-minting, only paying once for the gas fee of the rollup.
+              1. N ➜ 1, N Transactions can package into 1 transaction and
+              achieve many people free-minting, only paying once for the gas fee
+              of the rollup.
               <br />
-              2. ZKP decentralized verification, verified on smart contract and not on frontend or backend.
+              2. ZKP decentralized verification, verified on smart contract and
+              not on frontend or backend.
               <br />
               3. Perfect UX, only need signature and without any gas fee.
               <br />

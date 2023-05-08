@@ -19,7 +19,7 @@ export default function Desktop(props) {
         />
         <Box
           className="strokeText"
-          data-storke="Arjaverse!"
+          data-stroke="Arjaverse!"
           id="title"
           lineHeight="25px"
         >

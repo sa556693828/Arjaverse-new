@@ -22,25 +22,25 @@ export default function Wave() {
             xlinkHref="#gentle-wave"
             x="48"
             y="0"
-            fill="rgba(87,136,160,0.7"
+            fill="rgba(154, 208, 243,0.7"
           />
           <use
             xlinkHref="#gentle-wave"
             x="48"
             y="3"
-            fill="rgba(87,136,160,0.5)"
+            fill="rgba(154, 208, 243,0.5)"
           />
           <use
             xlinkHref="#gentle-wave"
             x="48"
             y="5"
-            fill="rgba(87,136,160,0.3)"
+            fill="rgba(154, 208, 243,0.3)"
           />
           <use
             xlinkHref="#gentle-wave"
             x="48"
             y="7"
-            fill="rgba(87,136,160,0.3)"
+            fill="rgba(154, 208, 243,0.3)"
           />
         </g>
       </svg>

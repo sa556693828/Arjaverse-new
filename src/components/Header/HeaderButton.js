@@ -21,7 +21,7 @@ export default function HeaderButton(props) {
       onClick={onClick}
       zIndex="3"
     >
-      <div className="headerText" data-storke={title}>
+      <div className="headerText" data-stroke={title}>
         {title}
       </div>
     </Box>

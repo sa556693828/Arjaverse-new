@@ -164,7 +164,10 @@ export default function Mobile(props) {
                     color="cyan.800"
                     className="drop-shadow-xl"
                     onClick={() => {
-                      window.open("https://opensea.io/zh-TW/collection/arjaverse-nft", "_blank");
+                      window.open(
+                        "https://opensea.io/zh-TW/collection/arjaverse-nft",
+                        "_blank"
+                      );
                       onClose();
                     }}
                   >
@@ -196,7 +199,7 @@ export default function Mobile(props) {
               />
               <Box
                 className="strokeText"
-                data-storke="Arjaverse!"
+                data-stroke="Arjaverse!"
                 id="title"
                 lineHeight="25px"
               >

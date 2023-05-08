@@ -1,6 +1,5 @@
 import React from "react";
 // 背景
-import Wave from "./Wave.js";
 import { Flex, Image, Box } from "@chakra-ui/react";
 // import arja from "../../assets/svg/arja.png";
 import arja from "../../assets/arja.png";
@@ -14,16 +13,16 @@ export default function Background(props) {
   return (
     <>
       <Flex
-        className="dashboard "
-        height={{ base: "1100px", sm: "1100px", md: "1200px" }}
+        className="dashboard"
+        // height={{ base: "1100px", sm: "1100px", md: "1200px" }}
         minHeight={{ base: "100vh" }}
         position="relative"
         textAlign="center"
         overflow="hidden"
         color="white"
-        justifyContent="flex-end"
+        justifyContent="center"
         alignItems="center"
-        background="linear-gradient(180deg,rgba(181, 224, 233, 1) 0%,rgba(206, 226, 214, 1) 100%)"
+        background="linear-gradient(180deg,rgba(154, 208, 243, 1) 0%,#81CDF3 100%)"
         flexDirection="column"
       >
         {/* cloud 1 */}
@@ -102,32 +101,6 @@ export default function Background(props) {
             top={{ base: "10px", sm: "110px", md: "110px" }}
           />
         </Flex>
-        {/* 海豹 */}
-        {/* <Image
-          width={{ base: "400px", sm: "90%", md: "60%" }}
-          src={arja.src}
-          alt="Dan Abramov"
-          marginBottom={{ base: "-400px", sm: "-550px", md: "-350px" }}
-          marginLeft={{ base: "auto", sm: "auto", md: "auto" }}
-          marginRight={{ base: "auto", sm: "auto", md: "auto" }}
-          transform={{ base: "translateX(10%)", sm: "translateX(10%)", md: "translateX(10%)" }}
-        /> */}
-        <Box
-          width={{ base: "400px", sm: "90%", md: "40%" }}
-          height={{ base: "400px", sm: "auto", md: "auto" }}
-          marginTop={{ base: "10px", sm: "20px", md: "0px" }}
-          marginBottom={{ base: "-250px", sm: "-350px", md: "-330px" }}
-          zIndex={"0"}
-        >
-          <Image
-            width={{ base: "400px", sm: "100%", md: "100%" }}
-            src={arja.src}
-            alt="Dan Abramov"
-          />
-        </Box>
-        {/* 海浪 */}
-        <Wave className="z-20" />
-        <div className="wave-bot z-20"></div>
       </Flex>
     </>
   );

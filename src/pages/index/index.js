@@ -27,7 +27,7 @@ export default function Main() {
         zIndex="3"
       >
         Into The <br />
-        <div className="strokeText" data-storke="Arjaverse!" id="title">
+        <div className="strokeText" data-stroke="Arjaverse!" id="title">
           Arjaverse!
         </div>
       </Box>
@@ -62,8 +62,8 @@ export default function Main() {
               gap="4"
               width={{ base: "80%", sm: "80%" }}
               display={{ base: "flex", sm: "80px" }}
-              alignItems={'center'}
-              flexDirection={{ base: "column", sm: "column" , md: "row" }}
+              alignItems={"center"}
+              flexDirection={{ base: "column", sm: "column", md: "row" }}
               justifyContent="center"
               zIndex={20}
             >

@@ -24,7 +24,7 @@ export default function Alert(props) {
       </div>
       <div
         className="flex-1 px-5 text-yellow headerText text-left text-xl"
-        data-storke={content}
+        data-stroke={content}
       >
         {content}
       </div>

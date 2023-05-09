@@ -1,9 +1,11 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import React from "react";
 
-const LinearButton = ({ text }) => {
+const LinearButton = ({ text, className }) => {
   return (
-    <button className="w-60 px-2 h-14 bg-gradient-to-r from-[#FE87BD] to-[#79A0EB] flex items-center  justify-center text-2xl font-medium gap-2	rounded-[14px]">
+    <button
+      className={`${className} px-4 h-14 bg-gradient-to-r from-[#FE87BD] to-[#79A0EB] flex items-center justify-between text-2xl font-medium hover:opacity-80`}
+    >
       {text}
       <ArrowForwardIcon />
     </button>

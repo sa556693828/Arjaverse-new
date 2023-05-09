@@ -160,14 +160,14 @@ export default function ShowPage() {
         marginBottom={"50px"}
         flexDirection={"column"}
       >
-        展示區
+        Show Room
         <Box
           fontSize={"16px"}
           backgroundColor="rgba(42,56,73,.6)"
           color="white"
           padding="10px"
           borderRadius="10px"
-          marginTop={'16px'}
+          marginTop={"16px"}
         >
           可隨意切換物件展示各種造型
         </Box>

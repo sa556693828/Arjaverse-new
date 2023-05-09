@@ -4,6 +4,8 @@ import About from "../components/About/About";
 import Title from "../components/Title/Title";
 import VideoBg from "../components/VideoBg/VideoBg";
 import Cards from "../components/Cards/Cards";
+import ShowPage from "./show";
+import Marquee from "../components/Marquee/Marquee";
 //TODO: add animation
 
 export default function Main() {
@@ -14,6 +16,8 @@ export default function Main() {
       <Box background="linear-gradient(180deg, #81CDF3 0%, #CEE2D6 43.74%)">
         <About />
         <Cards />
+        <Marquee />
+        <ShowPage />
       </Box>
     </>
   );

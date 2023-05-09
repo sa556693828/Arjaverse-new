@@ -5,7 +5,6 @@ import Mobile from "./HeaderMobile";
 import Desktop from "./HeaderDesktop";
 import { useRouter } from "next/router";
 import { useAccount } from "wagmi";
-import Alert from "../Alert/Alert";
 import { AccountContext } from "../Provider";
 
 export default function Header() {
@@ -14,20 +13,7 @@ export default function Header() {
   const router = useRouter();
   const { address } = useAccount();
   const toast = useToast();
-
   const goPage = (page) => {
-    if (page !== "/") {
-      if (!address) {
-        toast({
-          duration: 2000,
-          position: "bottom",
-          render: () => (
-            <Alert content="Please connect wallet First !" variant="info" />
-          ),
-        });
-        return;
-      }
-    }
     router.push(page);
   };
 

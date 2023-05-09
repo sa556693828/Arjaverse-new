@@ -42,11 +42,11 @@ export default function Desktop(props) {
             setShowGotoMint(false);
           }}
         >
-          <LinearButton text="Connect Wallet" />
+          <LinearButton text="Connect Wallet" className="w-60 rounded-2xl" />
         </div>
 
         {showGotoMint && (
-          <button className="absolute w-56 h-16 text-2xl text-black bg-black	 font-medium ">
+          <button className="absolute w-56 h-16 text-2xl text-black bg-black font-medium">
             Go to Mint
           </button>
         )}

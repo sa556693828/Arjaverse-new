@@ -1,0 +1,23 @@
+  .marquee-text {
+    animation: marquee 5s linear infinite alternate;
+  }
+  .marquee-text2 {
+    animation: marquee2 5s linear infinite alternate;
+  }
+  @keyframes marquee {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  @keyframes marquee2 {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+    

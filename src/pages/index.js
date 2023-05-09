@@ -6,7 +6,11 @@ import Background from "../components/Background/Background";
 import WaveButton from "../components/Button/WaveButton/WaveButton";
 import { useAccount } from "wagmi";
 import NoSSRWrapper from "../components/NoSSRWrapper";
-import { AccountContext } from "../components/Provider";
+import { AccountContext } from "../components/Provider"
+import About from "../components/About/About";
+import Title from "../components/Title/Title";
+import VideoBg from "../components/VideoBg/VideoBg";
+import Cards from "../components/Cards/Cards";
 //TODO: add animation
 
 export default function Main() {
@@ -23,7 +27,15 @@ export default function Main() {
     <>
       <VideoBg />
       <Title />
-      <About />
+
+      <div>
+        <About />
+        <Cards />
+
+      </div>
+
+
+
     </>
   );
 }

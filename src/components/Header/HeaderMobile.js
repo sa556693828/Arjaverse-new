@@ -20,7 +20,7 @@ import { useAccount } from "wagmi";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useEns } from "../../hooks/useEns.js";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { AiOutlineRight } from "react-icons/ai";
+import LinearButton from "../Button/LinearButton/LinearButton";
 
 export default function Mobile(props) {
   const ethIcon =
@@ -36,8 +36,7 @@ export default function Mobile(props) {
     <>
       <Flex display={{ base: "flex", lg: "none" }} width="40px" height="30px">
         <Button
-          bgColor={"darkcyan"}
-          _hover={{ bgColor: "white" }}
+          className="bg-[#FE87BD]"
           onClick={() => {
             setHover(true);
             onOpen();
@@ -48,19 +47,23 @@ export default function Mobile(props) {
           <HamburgerIcon color={hover ? "darkcyan" : "white"} w={8} h={8} />
         </Button>
       </Flex>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+      <Drawer isOpen={isOpen} size="xs" placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent className="bg-gradient-to-b flex items-center from-[#D0F3FF] via-[#E1F7FF] to-[#FEE3ED]">
+        <DrawerContent className=" bg-gradient-to-b flex gap-4 items-center from-[#9CDEF5] via-[#9CDEF5]  to-[#FF99C7] ">
+          <div className="my-4">
+            <LinearButton text="Connect Wallet" />
 
-          <div className="w-[] 	h-14 bg-gradient-to-r from-[#FE87BD] to-[#79A0EB] flex items-center  justify-center text-2xl	 font-medium	rounded-[14px]"
-          >
-            Connect Wallet
-            <AiOutlineRight />
           </div>
-
-
-          <div className="w-full bg-[#FE87BD]">Go to mint</div>
-
+          <div className="strokeMobileNavbar w-full bg-white  h-11 flex items-center justify-center"
+            data-stroke="Go to mint"  >Go to mint</div>
+          <div className="strokeMobileNavbar w-full   h-11 flex items-center justify-center"
+            data-stroke="Story"  >Story</div>
+          <div className="strokeMobileNavbar w-full   h-11 flex items-center justify-center"
+            data-stroke="About"  >About</div>
+          <div className="strokeMobileNavbar w-full   h-11 flex items-center justify-center"
+            data-stroke="Seals"  >Seals</div>
+          <div className="strokeMobileNavbar w-full   h-11 flex items-center justify-center"
+            data-stroke="ShowRoom"  >ShowRoom</div>
         </DrawerContent>
       </Drawer>
     </>

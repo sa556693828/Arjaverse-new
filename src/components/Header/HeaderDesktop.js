@@ -6,6 +6,7 @@ import HeaderButton from "./HeaderButton";
 import NoSSRWrapper from "../NoSSRWrapper";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { AiOutlineRight } from "react-icons/ai";
+import LinearButton from "../Button/LinearButton/LinearButton";
 
 export default function Desktop(props) {
   const { goPage, ifAddressHasNFT } = props;
@@ -47,18 +48,17 @@ export default function Desktop(props) {
       </Flex>
 
       <div>
-        <button
-          onMouseEnter={() => {
-            setShowGotoMint(true);
-          }}
+
+
+        <div className="hidden md:block" onMouseEnter={() => {
+          setShowGotoMint(true);
+        }}
           onMouseLeave={() => {
             setShowGotoMint(false);
-          }}
-          className=" w-56	h-14	 bg-gradient-to-r from-[#FE87BD] to-[#79A0EB] hidden  md:flex items-center  justify-center text-2xl	 font-medium	rounded-[14px]"
-        >
-          Connect Wallet
-          <AiOutlineRight />
-        </button>
+          }}>
+          <LinearButton text="Connect Wallet" />
+        </div>
+
         {showGotoMint && (
           <button className="absolute w-56 h-16 text-2xl text-black bg-black	 font-medium ">
             Go to Mint

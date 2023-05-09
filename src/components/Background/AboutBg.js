@@ -6,11 +6,12 @@ import Wave from "./Wave";
 export default function AboutBg(props) {
   return (
     <Flex
-      height="100%"
+      // height="100%"
       w="100%"
       position="absolute"
       overflow="hidden"
       background="linear-gradient(180deg,#81CDF3 0%,#F2D0EE 100%)"
+      className="flex flex-col justify-center items-center"
       //   bgRepeat="no-repeat"
       //   bgPos="center"
       //   bgSize="cover"

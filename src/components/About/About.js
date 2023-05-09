@@ -12,7 +12,7 @@ export default function About() {
         className="flex justify-center"
         mx="24"
       >
-        <div className="flex flex-col relative rounded-3xl bg-[#FE87BD] p-10 h-fit text-3xl text-center gap-4">
+        <div className="flex flex-col relative  rounded-3xl bg-[#FE87BD] p-10 h-fit text-3xl text-center gap-4">
           <div
             className="stroke"
             data-stroke="A planet with many seals - Arjaverse was born!"
@@ -33,6 +33,7 @@ export default function About() {
           </div>
         </div>
       </Box>
+      <div className="">ssssss</div>
     </AboutBg>
   );
 }

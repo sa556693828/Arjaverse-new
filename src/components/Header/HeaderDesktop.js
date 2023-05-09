@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 // import Image from 'next/dist/client/image';
 import { Center, Flex, Image, Box } from "@chakra-ui/react";
 import Logo from "../../assets/images/Logo.png";
 import HeaderButton from "./HeaderButton";
 import NoSSRWrapper from "../NoSSRWrapper";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+import LinearButton from "../Button/LinearButton/LinearButton";
 
 export default function Desktop(props) {
   const { goPage, ifAddressHasNFT } = props;
+  const [showGotoMint, setShowGotoMint] = useState(false);
 
   return (
     <>

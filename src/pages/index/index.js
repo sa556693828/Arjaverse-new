@@ -6,6 +6,7 @@ import Background from "../../components/Background/Background";
 import WaveButton from "../../components/Button/WaveButton/WaveButton";
 import { useAccount } from "wagmi";
 import NoSSRWrapper from "../../components/NoSSRWrapper";
+import Card from "../../components/Cards/Cards";
 //TODO: add animation
 
 export default function Main() {
@@ -30,7 +31,10 @@ export default function Main() {
         <div className="strokeText" data-stroke="Arjaverse!" id="title">
           Arjaverse!
         </div>
+
       </Box>
+
+
 
       <NoSSRWrapper>
         <Flex
@@ -41,6 +45,8 @@ export default function Main() {
           mt={{ base: "35px", sm: "40px" }}
           zIndex="20"
         >
+
+
           {address ? (
             <></>
           ) : (
@@ -62,7 +68,7 @@ export default function Main() {
               gap="4"
               width={{ base: "80%", sm: "80%" }}
               display={{ base: "flex", sm: "80px" }}
-              alignItems={"center"}
+              alignItems={'center'}
               flexDirection={{ base: "column", sm: "column", md: "row" }}
               justifyContent="center"
               zIndex={20}

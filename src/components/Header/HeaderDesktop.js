@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 // import Image from 'next/dist/client/image';
 import { Center, Flex, Image, Box } from "@chakra-ui/react";
 import Logo from "../../assets/images/Logo.png";
 import HeaderButton from "./HeaderButton";
 import NoSSRWrapper from "../NoSSRWrapper";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { AiOutlineRight } from "react-icons/ai";
+import LinearButton from "../Button/LinearButton/LinearButton";
 
 export default function Desktop(props) {
   const { goPage, ifAddressHasNFT } = props;
+  const [showGotoMint, setShowGotoMint] = useState(false);
 
   return (
     <>
@@ -18,50 +21,51 @@ export default function Desktop(props) {
           height={{ base: "40px", sm: "auto", md: "auto" }}
         />
         <Box
-          className="strokeText"
-          data-stroke="Arjaverse!"
-          id="title"
-          lineHeight="25px"
+          className="text-[#FE87BD] font-extrabold text-2xl  md:w-auto leading-6"
         >
-          Arjaverse!
+          Into The Arjaverse!
+
         </Box>
       </Flex>
       <Flex
-        className="text-black"
+        className="text-white"
         gap="4"
         justifyContent={"space-evenly"}
         display={{ base: "none", lg: "flex" }}
       >
-        <Center>
-          <HeaderButton title="Go To Mint" onClick={() => goPage("/mint")} />
-        </Center>
-        <Center>
-          <HeaderButton
-            title="My NFTs"
-            onClick={() => goPage("/profile")}
-            ifAddressHasNFT={ifAddressHasNFT}
-          />
-        </Center>
-        <Center>
-          <HeaderButton title="ShowRoom" onClick={() => goPage("/show")} />
-        </Center>
-        <Center>
-          <HeaderButton
-            title="Opensea"
-            onClick={() => {
-              window.open(
-                "https://opensea.io/zh-TW/collection/arjaverse-nft",
-                "_blank"
-              );
-            }}
-          />
-        </Center>
+        <button className="px-4 h-14 flex items-center justify-center	rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD]  text-[32px] font-medium">
+          Story
+        </button>
+        <button className="px-4 h-14 flex items-center justify-center rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD]  text-[32px] font-medium">
+          About
+        </button>
+        <button className="px-4 h-14	 flex items-center justify-center rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD]  text-[32px] font-medium">
+          Seals
+        </button>
+        <button className="px-4 h-14	 flex items-center justify-center rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD]  text-[32px] font-medium">
+          ShowRoom
+        </button>
       </Flex>
-      <Flex display={{ base: "none", lg: "flex" }}>
-        <NoSSRWrapper>
-          <ConnectButton chainStatus="icon" />
-        </NoSSRWrapper>
-      </Flex>
+
+      <div>
+
+
+        <div className="hidden md:block" onMouseEnter={() => {
+          setShowGotoMint(true);
+        }}
+          onMouseLeave={() => {
+            setShowGotoMint(false);
+          }}>
+          <LinearButton text="Connect Wallet" />
+        </div>
+
+        {showGotoMint && (
+          <button className="absolute w-56 h-16 text-2xl text-black bg-black	 font-medium ">
+            Go to Mint
+          </button>
+        )}
+      </div>
+
     </>
   );
 }

@@ -93,7 +93,21 @@ h5 {
     position: absolute;
     z-index: -1;
     -webkit-text-stroke: 3px #EC6F91;
-    text-stroke: 3px #EC6F91;
+}
+
+.strokeMobileNavbar {
+  font-size: 24px;
+  right:0;
+  position: relative;
+  color: #FE87BD;
+  z-index: 4;
+  // font-size: 125px;
+}
+.strokeMobileNavbar::before {
+    content: attr(data-stroke);
+    position: absolute;
+    z-index: -1;
+    -webkit-text-stroke: 3px #7B7478;
 }
 
 .btn-connect {

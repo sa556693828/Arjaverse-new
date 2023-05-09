@@ -6,22 +6,12 @@ import Cards from "../components/Cards/Cards";
 //TODO: add animation
 
 export default function Main() {
-  const { ifAddressHasNFT } = useContext(AccountContext);
-  const { address } = useAccount();
-  const router = useRouter();
-  const goPage = (page) => {
-    router.push(page);
-  };
-
   return (
     <>
       <VideoBg />
       <Title />
-
-      <div>
-        <About />
-        <Cards />
-      </div>
+      <About />
+      <Cards />
     </>
   );
 }

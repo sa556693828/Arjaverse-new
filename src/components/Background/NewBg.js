@@ -18,7 +18,7 @@ export default function NewBg(props) {
       className="flex flex-col"
     >
       <div>{props.children}</div>
-      <Flex className="dashboard" flexDirection="column" w="full">
+      <Flex className="dashboard h-[40vh]" flexDirection="column" w="full">
         <Wave className="z-20" />
         <div className="wave-bot z-20" />
       </Flex>

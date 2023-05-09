@@ -11,5 +11,3 @@ const LinearButton = ({ text }) => {
 };
 
 export default LinearButton;
-
-export default LinearButton

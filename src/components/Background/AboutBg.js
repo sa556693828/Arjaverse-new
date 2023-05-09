@@ -12,10 +12,6 @@ export default function AboutBg(props) {
       overflow="hidden"
       background="linear-gradient(180deg,#81CDF3 0%,#F2D0EE 100%)"
       className="flex flex-col justify-center items-center"
-      //   bgRepeat="no-repeat"
-      //   bgPos="center"
-      //   bgSize="cover"
-      //   bgImage={bg.src}
     >
       {props.children}
     </Flex>

@@ -1,19 +1,13 @@
 import React, { useState } from "react";
-import React, { useState } from "react";
-// import Image from 'next/dist/client/image';
-import { Center, Flex, Image, Box } from "@chakra-ui/react";
+import { Flex, Image, Box } from "@chakra-ui/react";
 import Logo from "../../assets/images/Logo.png";
-import HeaderButton from "./HeaderButton";
-import NoSSRWrapper from "../NoSSRWrapper";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
 import LinearButton from "../Button/LinearButton/LinearButton";
 
 export default function Desktop(props) {
   const { goPage, ifAddressHasNFT } = props;
   const [showGotoMint, setShowGotoMint] = useState(false);
-  const [showGotoMint, setShowGotoMint] = useState(false);
-
+  const buttonStyle =
+    "w-44 h-14 rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD] text-3xl";
   return (
     <>
       <Flex align="center" onClick={() => goPage("/")} cursor={"pointer"}>
@@ -22,7 +16,7 @@ export default function Desktop(props) {
           width={{ base: "50px", sm: "60px", md: "auto" }}
           height={{ base: "40px", sm: "auto", md: "auto" }}
         />
-        <Box className="text-[#FE87BD] font-extrabold text-2xl  md:w-auto leading-6">
+        <Box className="text-[#FE87BD] font-extrabold text-2xl md:w-auto leading-6">
           Into The Arjaverse!
         </Box>
       </Flex>
@@ -32,18 +26,10 @@ export default function Desktop(props) {
         justifyContent={"space-evenly"}
         display={{ base: "none", lg: "flex" }}
       >
-        <button className="px-4 h-14 flex items-center justify-center	rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD]  text-[32px] font-medium">
-          Story
-        </button>
-        <button className="px-4 h-14 flex items-center justify-center rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD]  text-[32px] font-medium">
-          About
-        </button>
-        <button className="px-4 h-14	 flex items-center justify-center rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD]  text-[32px] font-medium">
-          Seals
-        </button>
-        <button className="px-4 h-14	 flex items-center justify-center rounded-[26px] border-[3px] border-[#EC6F91] bg-[#FE87BD]  text-[32px] font-medium">
-          ShowRoom
-        </button>
+        <button className={buttonStyle}>Story</button>
+        <button className={buttonStyle}>About</button>
+        <button className={buttonStyle}>Seals</button>
+        <button className={buttonStyle}>ShowRoom</button>
       </Flex>
 
       <div>

@@ -75,9 +75,9 @@ function MyApp({ Component, pageProps }) {
             <ChakraProvider theme={theme}>
               <Provider>
                 <Header />
-                <div className="pt-20">
-                  <Component {...pageProps} />
-                </div>
+                {/* <div className="pt-20"> */}
+                <Component {...pageProps} />
+                {/* </div> */}
               </Provider>
             </ChakraProvider>
           </RainbowKitProvider>

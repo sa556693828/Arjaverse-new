@@ -14,8 +14,8 @@ export default function Background(props) {
     <>
       <Flex
         className="dashboard"
-        // height={{ base: "1100px", sm: "1100px", md: "1200px" }}
-        minHeight={{ base: "100vh" }}
+        height={{ base: "400px", sm: "500px", md: "500px" }}
+        minHeight={{ base: "35vh" }}
         position="relative"
         textAlign="center"
         overflow="hidden"
@@ -39,31 +39,24 @@ export default function Background(props) {
           src={cloud2.src}
           position="absolute"
           width={{ base: "200px", sm: "200px", md: "auto" }}
-          right={{ base: "-20%", sm: "-20%", md: "20%" }}
-          top={{ base: "180px", sm: "180px", md: "300px" }}
+          right={{ base: "-10%", sm: "-10%", md: "10%" }}
+          top={{ base: "180px", sm: "180px", md: "200px" }}
           zIndex="2"
         />
-        {/* cloud 3 */}
-        <Image
-          src={cloud2.src}
-          position="absolute"
-          left="15%"
-          top="650px"
-          display={{ base: "none", sm: "none", md: "block" }}
-        />
+
         <Image
           src={seagull2.src}
           position="absolute"
-          right="200px"
-          top="600px"
+          right="100px"
+          top="100px"
           display={{ base: "none", sm: "none", md: "block" }}
         />
         <Image
           width="200px"
           src={seagull2.src}
           position="absolute"
-          right="200px"
-          top="650px"
+          right="100px"
+          top="150px"
           display={{ base: "none", sm: "none", md: "block" }}
         />
         {props.children}

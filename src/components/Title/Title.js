@@ -14,8 +14,8 @@ export default function Title() {
         color="#425673"
         zIndex="3"
       >
-        <div className="strokeTitle" data-stroke={`Into The`}>
-          <div className="strokeTitle2" data-stroke={`Into The`} id="title">
+        <div className="strokeText" data-stroke={`Into The`}>
+          <div className="strokeText2" data-stroke={`Into The`} id="title">
             Into The
           </div>
         </div>

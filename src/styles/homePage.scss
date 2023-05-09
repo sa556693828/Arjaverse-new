@@ -146,11 +146,32 @@ body {
   }
 
   // titles
-  .titles {
-    .strokeText {
-      font-size: 64px;
-    }
+.titles {
+  .strokeText {
+    right:0;
+    position: relative;
+    color: #FED0D4;
+    z-index: 4;
+    font-size: 60px;
+    word-wrap: break-word ;
+    .strokeText2::before {
+      content: attr(data-stroke);
+      position: absolute;
+      z-index: -1;
+      -webkit-text-stroke: 10px #EC6F91;
+      text-stroke: 10px #EC6F91;
   }
+  }
+  .strokeText::before {
+      content: attr(data-stroke);
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      -webkit-text-stroke: 18px #ffffff;
+      text-stroke: 18px #ffffff;
+  }
+}
+
   .sun {
     .sun-content {
       width: 372px;

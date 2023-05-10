@@ -6,6 +6,7 @@ import VideoBg from "../components/VideoBg/VideoBg";
 import Cards from "../components/Cards/Cards";
 import ShowPage from "./show";
 import Marquee from "../components/Marquee/Marquee";
+import Mint from "../components/Mint/Mint";
 //TODO: add animation
 
 export default function Main() {
@@ -17,6 +18,7 @@ export default function Main() {
         <About />
         <Cards />
         <Marquee />
+        <Mint />
         <ShowPage />
       </Box>
     </>

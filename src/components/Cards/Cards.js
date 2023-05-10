@@ -4,8 +4,11 @@ import React from "react";
 import cha1 from "../../assets/images/cha1.png";
 import cha2 from "../../assets/images/cha2.png";
 import cha3 from "../../assets/images/cha3.png";
+import { useDeviceDetect } from "../../lib/media-query";
 
 export default function Cards() {
+  const { isTabletOrMobile } = useDeviceDetect();
+
   return (
     <div className="w-full">
       <Box className="w-full flex justify-center">
@@ -16,13 +19,17 @@ export default function Cards() {
           marginTop={{ base: "100px", sm: "70px", md: "70px" }}
           color="#FE878D"
           zIndex="3"
-          data-stroke="Chracters"
+          data-stroke="Characters"
         >
-          Chracters
+          Characters
         </Box>
       </Box>
       <Box className="grid grid-cols-3 gap-4 md:gap-14 w-11/12 md:w-4/5 mx-auto mt-8">
-        <div className="rounded-2xl md:rounded-[40px] bg-white/60 flex flex-col justify-between">
+        <div
+          className="rounded-2xl md:rounded-[40px] bg-white/60 flex flex-col justify-between"
+          data-aos-delay={isTabletOrMobile ? 0 : 300}
+          data-aos="flip-left"
+        >
           <div className="flex flex-1 items-center justify-center">
             <Image width="650" height="500" src={cha1} />
           </div>
@@ -30,7 +37,11 @@ export default function Cards() {
             Chubby Seal
           </div>
         </div>
-        <div className="rounded-2xl md:rounded-[40px] bg-white/60 flex flex-col justify-between">
+        <div
+          className="rounded-2xl md:rounded-[40px] bg-white/60 flex flex-col justify-between"
+          data-aos-delay={isTabletOrMobile ? 0 : 600}
+          data-aos="flip-left"
+        >
           <div className="flex flex-1 items-center justify-center">
             <Image width="650" height="650" src={cha2} />
           </div>
@@ -38,7 +49,11 @@ export default function Cards() {
             Seal Arja
           </div>
         </div>
-        <div className="rounded-2xl md:rounded-[40px] bg-white/60 flex flex-col justify-between">
+        <div
+          className="rounded-2xl md:rounded-[40px] bg-white/60 flex flex-col justify-between"
+          data-aos-delay={isTabletOrMobile ? 0 : 900}
+          data-aos="flip-left"
+        >
           <div className="flex flex-1 items-center justify-center">
             <Image width="650" height="500" src={cha3} />
           </div>

@@ -13,6 +13,9 @@ import Header from "../components/Header/Header";
 import Head from "next/head";
 import Logo from "../../src/assets/images/logo.ico";
 import { Provider } from "../components/Provider";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const emotionCache = createCache({
   key: "style",
@@ -53,6 +56,9 @@ const wagmiClient = createClient({
 });
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
     <>
       <Head>

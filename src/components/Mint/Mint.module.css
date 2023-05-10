@@ -1,0 +1,29 @@
+.marquee-text {
+  animation: marquee 20s linear infinite alternate;
+}
+.stroke {
+  /* font-family:'Permanent Marker' ,'Palanquin Dark'; */
+  color: transparent;
+  background: linear-gradient(90deg,#D0F3F6 20%,#F59CC8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+  z-index: 4;
+}
+.stroke::before {
+  content: attr(data-stroke);
+  position: absolute;
+  /* z-index: -1; */
+  -webkit-text-stroke: 0.5rem #ffffff;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 300%;
+  }
+}

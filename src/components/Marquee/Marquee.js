@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Marquee.module.css";
-import cha1 from "../../assets/images/cha1.png";
+import cha1 from "../../assets/images/pics/Group2731.png";
+import cha11 from "../../assets/images/pics/Group2736.png";
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
 import LinearButton from "../Button/LinearButton/LinearButton";
@@ -22,15 +23,15 @@ export default function Marquee() {
       <div className="flex flex-col gap-10">
         <Box className={styles["marquee-text"]} pos="relative">
           <div className="flex">
-            <div className="flex shadow-card rounded-[40px]">
+            <div className="flex rounded-[40px]">
               <Image width="200" height="200" src={cha1} />
             </div>
           </div>
         </Box>
         <Box className={styles["marquee-text2"]} pos="relative">
           <div className="flex">
-            <div className="flex shadow-card rounded-[40px]">
-              <Image width="200" height="200" src={cha1} />
+            <div className="flex rounded-[40px]">
+              <Image width="200" height="200" src={cha11} />
             </div>
           </div>
         </Box>

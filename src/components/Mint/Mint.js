@@ -20,9 +20,8 @@ export default function Mint() {
           </div>
 
           <Box
-            className={styles["marquee-text"]}
+            className={`${styles["marquee-text"]}`}
             pos="relative"
-            overflow="hidden"
             zIndex="10"
           >
             <div
@@ -46,9 +45,9 @@ export default function Mint() {
             </div>
           </Box>
         </div>
-        <div className="w-3/4 flex justify-end z-40">
-          <img src={pic.src} alt="" width="48%" className="absolute" />
-          <img src={pic2.src} width="64%" alt="" />
+        <div className="w-3/4 flex items-center justify-end z-40 relative">
+          <img src={pic.src} alt="" className="absolute w-1/2 md:w-8/12" />
+          <img src={pic2.src} className="absolute w-1/2 md:static md:w-8/12" alt="" />
         </div>
       </div>
       <div className="w-full flex justify-end">

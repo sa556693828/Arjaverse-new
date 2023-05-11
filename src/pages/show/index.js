@@ -176,7 +176,7 @@ export default function ShowPage() {
           width={"100%"}
           color={"black"}
           marginTop={"80px"}
-          display={{ base: "none", md: "none", md: "block" }}
+          display={{ base: "none", md: "none", lg: "block" }}
         >
           <Grid
             gridTemplateColumns={{
@@ -244,9 +244,9 @@ export default function ShowPage() {
         </Box>
         {/* 手機版 */}
         <Flex
-          display={{ base: "flex", sm: "flex", md: "none" }}
+          display={{ base: "flex", sm: "flex", lg: "none" }}
           flexDirection={"column"}
-          marginTop={{ base: "20px", sm: "20px", md: "50px" }}
+          marginTop={{ base: "20px", sm: "20px", lg: "50px" }}
           alignItems="center"
           width="100%"
           padding="20px 10px"

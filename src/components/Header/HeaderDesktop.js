@@ -34,7 +34,7 @@ export default function Desktop(props) {
 
       <div>
         <div
-          className="hidden md:block"
+          className="hidden lg:block"
           onMouseEnter={() => {
             setShowGotoMint(true);
           }}
@@ -43,13 +43,15 @@ export default function Desktop(props) {
           }}
         >
           <LinearButton text="Connect Wallet" className="w-60 rounded-2xl" />
+
+          {showGotoMint && (
+            <button className="absolute w-56 h-56 text-2xl text-black bg-black font-medium z-40">
+              Go to Mint
+            </button>
+          )}
         </div>
 
-        {showGotoMint && (
-          <button className="absolute w-56 h-16 text-2xl text-black bg-black font-medium">
-            Go to Mint
-          </button>
-        )}
+
       </div>
     </>
   );

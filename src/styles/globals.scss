@@ -81,19 +81,27 @@ h5 {
     z-index: -1;
     -webkit-text-stroke: 3px #425673;
 }
+// .stroke {
+//   right:0;
+//   position: relative;
+//   color: #ffffff;
+//   z-index: 4;
+//   // font-size: 125px;
+// }
+// .stroke::before {
+//     content: attr(data-stroke);
+//     position: absolute;
+//     z-index: -1;
+//     -webkit-text-stroke: 3px #EC6F91;
+// }
+
 .stroke {
-  right:0;
-  position: relative;
   color: #ffffff;
-  z-index: 4;
-  // font-size: 125px;
+  -webkit-text-stroke: 2px #EC6F91; /* Safari/Chrome */
+  text-stroke: 3px #EC6F91;
 }
-.stroke::before {
-    content: attr(data-stroke);
-    position: absolute;
-    z-index: -1;
-    -webkit-text-stroke: 3px #EC6F91;
-}
+
+
 
 .strokeMobileNavbar {
   font-size: 24px;

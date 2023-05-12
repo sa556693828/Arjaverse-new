@@ -19,6 +19,7 @@ export default function Footer() {
       overflow="hidden"
       className="flex flex-col"
     >
+      <div className="flex"></div>
       <Flex className="h-[40vh]" flexDirection="column" w="full">
         <Wave className="z-20" />
         <div className="wave-bot z-20" />

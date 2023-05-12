@@ -13,163 +13,18 @@ import {
 import ContentBg from "../../components/Background/ContentBg";
 import SwiperItem from "../../components/Show/Swiper";
 import ShowImage from "../../components/Show/ShowImage";
-
-// images
-import body from "../../assets/images/show/body/Arja.png";
-import body2 from "../../assets/images/show/body/BeardedSeal.png";
-import body3 from "../../assets/images/show/body/HarpSeal.png";
-import body4 from "../../assets/images/show/body/JimmyTheSeal.png";
-import body5 from "../../assets/images/show/body/RibbonSeal.png";
-
-import ball1 from "../../assets/images/show/ball/Coin.png";
-import ball2 from "../../assets/images/show/ball/Flower.png";
-import ball3 from "../../assets/images/show/ball/Octopus.png";
-import ball4 from "../../assets/images/show/ball/Penguin.png";
-import ball5 from "../../assets/images/show/ball/StarRing.png";
-import ball6 from "../../assets/images/show/ball/Volley-ball.png";
-
-import eye1 from "../../assets/images/show/eyes/DollarBills.png";
-import eye2 from "../../assets/images/show/eyes/Dot.png";
-import eye3 from "../../assets/images/show/eyes/Lightening.png";
-import eye4 from "../../assets/images/show/eyes/LineShape.png";
-import eye5 from "../../assets/images/show/eyes/Sad.png";
-import eye6 from "../../assets/images/show/eyes/Watery.png";
-
-import bg1 from "../../assets/images/show/bg/Beige.png";
-import bg2 from "../../assets/images/show/bg/Blue.png";
-import bg3 from "../../assets/images/show/bg/Gray.png";
-import bg4 from "../../assets/images/show/bg/Green.png";
-import bg5 from "../../assets/images/show/bg/Navy.png";
-import bg6 from "../../assets/images/show/bg/Pink.png";
-import bg7 from "../../assets/images/show/bg/Purple.png";
-import bg8 from "../../assets/images/show/bg/Yellow.png";
-
-import dec1 from "../../assets/images/show/decoration/BowTieHead.png";
-import dec2 from "../../assets/images/show/decoration/BowTieNeck.png";
-import dec3 from "../../assets/images/show/decoration/BowTieTail.png";
-import dec4 from "../../assets/images/show/decoration/Cowboy.png";
-import dec5 from "../../assets/images/show/decoration/Crown.png";
-import dec6 from "../../assets/images/show/decoration/Dress.png";
-import dec7 from "../../assets/images/show/decoration/FriedG.png";
-import dec8 from "../../assets/images/show/decoration/Fries.png";
-import dec9 from "../../assets/images/show/decoration/GoldenNacklace.png";
-import dec10 from "../../assets/images/show/decoration/MultiGoldeRings.png";
-import dec11 from "../../assets/images/show/decoration/PearlMilk.png";
-import dec12 from "../../assets/images/show/decoration/Scarf01.png";
-import dec13 from "../../assets/images/show/decoration/Scarf02.png";
-import dec14 from "../../assets/images/show/decoration/Scarf03.png";
-import dec15 from "../../assets/images/show/decoration/Seaweed.png";
-import dec16 from "../../assets/images/show/decoration/Splash.png";
-import dec17 from "../../assets/images/show/decoration/TailRing.png";
-import decSlide1 from "../../assets/images/show/decoration/show/BowTieHead.png";
-import decSlide2 from "../../assets/images/show/decoration/show/BowTieNeck.png";
-import decSlide3 from "../../assets/images/show/decoration/show/BowTieTail.png";
-import decSlide4 from "../../assets/images/show/decoration/show/Cowboy.png";
-import decSlide5 from "../../assets/images/show/decoration/show/Crown.png";
-import decSlide6 from "../../assets/images/show/decoration/show/Dress.png";
-import decSlide7 from "../../assets/images/show/decoration/show/FriedG.png";
-import decSlide8 from "../../assets/images/show/decoration/show/Fries.png";
-import decSlide9 from "../../assets/images/show/decoration/show/GoldenNacklace.png";
-import decSlide10 from "../../assets/images/show/decoration/show/MultiGoldeRings.png";
-import decSlide11 from "../../assets/images/show/decoration/show/PearlMilk.png";
-import decSlide12 from "../../assets/images/show/decoration/show/Scarf01.png";
-import decSlide13 from "../../assets/images/show/decoration/show/Scarf02.png";
-import decSlide14 from "../../assets/images/show/decoration/show/Scarf03.png";
-import decSlide15 from "../../assets/images/show/decoration/show/Seaweed.png";
-import decSlide16 from "../../assets/images/show/decoration/show/Splash.png";
-import decSlide17 from "../../assets/images/show/decoration/show/TailRing.png";
-
-import effect1 from "../../assets/images/show/effect/ColorSpot.png";
-import effect2 from "../../assets/images/show/effect/RedWave.png";
-import effect3 from "../../assets/images/show/effect/RingStars.png";
-import effect4 from "../../assets/images/show/effect/Ripple.png";
-import effect5 from "../../assets/images/show/effect/Spotlight.png";
-import effect6 from "../../assets/images/show/effect/Stars.png";
-
-const bodys = [
-  { id: 1, name: "Arja", src: body.src },
-  { id: 2, name: "BeardedSeal", src: body2.src },
-  { id: 3, name: "HarpSeal", src: body3.src },
-  { id: 4, name: "JimmyTheSeal", src: body4.src },
-  { id: 5, name: "RibbonSeal", src: body5.src },
-];
-
-const balls = [
-  { id: 1, name: "Coin", src: ball1.src },
-  { id: 2, name: "Flower", src: ball2.src },
-  { id: 3, name: "Octopus", src: ball3.src },
-  { id: 4, name: "Penguin", src: ball4.src },
-  { id: 5, name: "StarRing", src: ball5.src },
-  { id: 6, name: "Volley-ball", src: ball6.src },
-];
-
-const eyes = [
-  { id: 1, name: "DollarBills", src: eye1.src },
-  { id: 2, name: "Dot", src: eye2.src },
-  { id: 3, name: "Lightening", src: eye3.src },
-  { id: 4, name: "LineShape", src: eye4.src },
-  { id: 5, name: "Sad", src: eye5.src },
-  { id: 6, name: "Watery", src: eye6.src },
-];
-
-const backgrounds = [
-  { id: 1, name: "Beige", src: bg1.src },
-  { id: 2, name: "Blue", src: bg2.src },
-  { id: 3, name: "Gray", src: bg3.src },
-  { id: 4, name: "Green", src: bg4.src },
-  { id: 5, name: "Navy", src: bg5.src },
-  { id: 6, name: "Pink", src: bg6.src },
-  { id: 7, name: "Purple", src: bg7.src },
-  { id: 8, name: "Yellow", src: bg8.src },
-];
-
-const decorationsSlide = [
-  { id: 1, name: "BowTieHead", src: decSlide1.src },
-  { id: 2, name: "BowTieNeck", src: decSlide2.src },
-  { id: 3, name: "BowTieTail", src: decSlide3.src },
-  { id: 4, name: "Cowboy", src: decSlide4.src },
-  { id: 5, name: "Crown", src: decSlide5.src },
-  { id: 6, name: "Dress", src: decSlide6.src },
-  { id: 7, name: "FriedG", src: decSlide7.src },
-  { id: 8, name: "Fries", src: decSlide8.src },
-  { id: 9, name: "GoldenNacklace", src: decSlide9.src },
-  { id: 10, name: "MultiGoldeRings", src: decSlide10.src },
-  { id: 11, name: "PearlMilk", src: decSlide11.src },
-  { id: 12, name: "Scarf01", src: decSlide12.src },
-  { id: 13, name: "Scarf02", src: decSlide13.src },
-  { id: 14, name: "Scarf03", src: decSlide14.src },
-  { id: 15, name: "Seaweed", src: decSlide15.src },
-  { id: 16, name: "Splash", src: decSlide16.src },
-  { id: 17, name: "TailRing", src: decSlide17.src },
-];
-const decorations = [
-  { id: 1, name: "BowTieHead", src: dec1.src },
-  { id: 2, name: "BowTieNeck", src: dec2.src },
-  { id: 3, name: "BowTieTail", src: dec3.src },
-  { id: 4, name: "Cowboy", src: dec4.src },
-  { id: 5, name: "Crown", src: dec5.src },
-  { id: 6, name: "Dress", src: dec6.src },
-  { id: 7, name: "FriedG", src: dec7.src },
-  { id: 8, name: "Fries", src: dec8.src },
-  { id: 9, name: "GoldenNacklace", src: dec9.src },
-  { id: 10, name: "MultiGoldeRings", src: dec10.src },
-  { id: 11, name: "PearlMilk", src: dec11.src },
-  { id: 12, name: "Scarf01", src: dec12.src },
-  { id: 13, name: "Scarf02", src: dec13.src },
-  { id: 14, name: "Scarf03", src: dec14.src },
-  { id: 15, name: "Seaweed", src: dec15.src },
-  { id: 16, name: "Splash", src: dec16.src },
-  { id: 17, name: "TailRing", src: dec17.src },
-];
-
-const effects = [
-  { id: 1, name: "ColorSpot", src: effect1.src },
-  { id: 2, name: "RedWave", src: effect2.src },
-  { id: 3, name: "RingStars", src: effect3.src },
-  { id: 4, name: "Ripple", src: effect4.src },
-  { id: 5, name: "Spotlight", src: effect5.src },
-  { id: 6, name: "Stars", src: effect6.src },
-];
+import {
+  bodys,
+  bodysSlide,
+  balls,
+  eyes,
+  eyesSlide,
+  backgrounds,
+  decorationsSlide,
+  decorations,
+  effects,
+  effectsSlide,
+} from "../../components/PicArray/PicArray";
 
 export default function ShowPage() {
   const [bodyId, setBodyId] = useState(1);
@@ -229,31 +84,35 @@ export default function ShowPage() {
             gap={4}
           >
             <Flex gridArea="body1" justifyContent={"center"} textAlign="center">
-              <Flex flexDirection="column" fontSize="20px">
+              <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
                 Body {bodyId}
-                <SwiperItem options={bodys} triggle={setBodyId} />
+                <SwiperItem options={bodysSlide} triggle={setBodyId} />
               </Flex>
             </Flex>
             <Flex gridArea="body2" justifyContent={"center"} textAlign="center">
-              <Flex flexDirection="column" fontSize="20px">
+              <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
                 Ball {ballId}
                 <SwiperItem options={balls} triggle={setBallId} />
               </Flex>
             </Flex>
             <Flex gridArea="body3" justifyContent={"center"} textAlign="center">
-              <Flex flexDirection="column" fontSize="20px">
+              <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
                 Eyes {eyeId}
-                <SwiperItem options={eyes} triggle={setEyeId} />
+                <SwiperItem options={eyesSlide} triggle={setEyeId} />
               </Flex>
             </Flex>
             <Flex gridArea="body4" justifyContent={"center"} textAlign="center">
-              <Flex flexDirection="column" fontSize="20px">
+              <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
                 Background {backgroundId}
-                <SwiperItem options={backgrounds} triggle={setBackgroundId} />
+                <SwiperItem
+                  options={backgrounds}
+                  triggle={setBackgroundId}
+                  items="bg"
+                />
               </Flex>
             </Flex>
             <Flex gridArea="body5" justifyContent={"center"} textAlign="center">
-              <Flex flexDirection="column" fontSize="20px">
+              <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
                 Decoration {decorationId}
                 <SwiperItem
                   options={decorationsSlide}
@@ -262,9 +121,13 @@ export default function ShowPage() {
               </Flex>
             </Flex>
             <Flex gridArea="body6" justifyContent={"center"} textAlign="center">
-              <Flex flexDirection="column" fontSize="20px">
+              <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
                 Effects {effectId}
-                <SwiperItem options={effects} triggle={setEffectId} />
+                <SwiperItem
+                  options={effectsSlide}
+                  triggle={setEffectId}
+                  items="effect"
+                />
               </Flex>
             </Flex>
             <Flex

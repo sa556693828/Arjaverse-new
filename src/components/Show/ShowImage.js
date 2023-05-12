@@ -16,7 +16,7 @@ export default function ShowImage(props) {
       width={{ base: "300px", md: "500px" }}
       height={{ base: "300px", md: "500px" }}
       borderRadius="50%"
-      border={"10px solid #425673"}
+      border={"10px solid #FE87BD"}
       position="relative"
       overflow="hidden"
       bgImg={bgImgSrc}

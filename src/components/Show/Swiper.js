@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export default function SwiperItem(props) {
-  const { options, triggle } = props;
+  const { options, triggle, items } = props;
 
   return (
     <Flex width={"400px"} height={"200px"} justifyContent={"center"}>
@@ -31,9 +31,27 @@ export default function SwiperItem(props) {
               display={"flex"}
               justifyContent={"center"}
             >
-              <div className="flex w-1/2 justify-center bg-[#C5C5C5] rounded-[40px] p-4 border-4">
-                <Image src={item.src} width={"100%"} height={"100%"} />
-              </div>
+              {items === "effect" ? (
+                <Box
+                  className="flex w-1/2 justify-center rounded-[40px] p-4 border-4 border-[#FE87BD]"
+                  bgImage={item.src}
+                  bgRepeat="no-repeat"
+                  bgPos="center"
+                  bgSize="cover"
+                />
+              ) : items === "bg" ? (
+                <Box
+                  className="flex w-1/2 justify-center rounded-[40px] p-4 border-4 border-[#FE87BD]"
+                  bgImage={item.src}
+                  bgRepeat="no-repeat"
+                  bgPos="center"
+                  bgSize="cover"
+                />
+              ) : (
+                <div className="flex w-1/2 justify-center bg-[#C5C5C5] rounded-[40px] p-4 border-4 border-[#FE87BD]">
+                  <Image src={item.src} width="auto" />
+                </div>
+              )}
             </Box>
           </SwiperSlide>
         ))}

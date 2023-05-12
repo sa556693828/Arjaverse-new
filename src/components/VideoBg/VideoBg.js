@@ -1,17 +1,7 @@
-import React, { useContext } from "react";
-import { useRouter } from "next/router";
-import { useAccount } from "wagmi";
-import { AccountContext } from "../Provider";
+import React from "react";
 import NewBg from "../Background/NewBg";
-import { Center, Flex, Image, Box } from "@chakra-ui/react";
 
 export default function VideoBg() {
-  const { ifAddressHasNFT } = useContext(AccountContext);
-  const { address } = useAccount();
-  const router = useRouter();
-  const goPage = (page) => {
-    router.push(page);
-  };
   //h-[50vh]
   return (
     <NewBg>

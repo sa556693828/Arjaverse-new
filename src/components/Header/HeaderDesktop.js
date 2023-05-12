@@ -39,9 +39,9 @@ export default function Desktop(props) {
           ShowRoom
         </a>
       </Flex>
-      <div className="pl-3 hidden lg:block">
+      <div className="pl-3 hidden lg:block relative">
         <div
-          className="border-10"
+          className="border-8 border-b-0 border-white"
           onMouseEnter={() => {
             setShowGotoMint(true);
           }}
@@ -49,7 +49,15 @@ export default function Desktop(props) {
             setShowGotoMint(false);
           }}
         >
-          <LinearButton text="Connect Wallet" className="w-60 rounded-2xl" />
+          <LinearButton
+            text="Connect Wallet"
+            className="w-60 rounded-2xl shadow-xl"
+          />
+          {showGotoMint && (
+            <button className="absolute border-8 border-t-0 right-0 border-white w-64 h-20 text-2xl rounded-3xl text-white font-medium z-40">
+              Go to Mint
+            </button>
+          )}
         </div>
       </div>
     </>

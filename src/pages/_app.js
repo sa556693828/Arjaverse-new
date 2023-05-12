@@ -11,7 +11,7 @@ import { CacheProvider } from "@emotion/react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Header from "../components/Header/Header";
 import Head from "next/head";
-import Logo from "../../src/assets/images/logo.ico";
+import Logo from "../../src/assets/images/Logo.png";
 import { Provider } from "../components/Provider";
 import AOS from "aos";
 import "aos/dist/aos.css";

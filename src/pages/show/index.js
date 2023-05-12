@@ -61,6 +61,23 @@ import dec14 from "../../assets/images/show/decoration/Scarf03.png";
 import dec15 from "../../assets/images/show/decoration/Seaweed.png";
 import dec16 from "../../assets/images/show/decoration/Splash.png";
 import dec17 from "../../assets/images/show/decoration/TailRing.png";
+import decSlide1 from "../../assets/images/show/decoration/show/BowTieHead.png";
+import decSlide2 from "../../assets/images/show/decoration/show/BowTieNeck.png";
+import decSlide3 from "../../assets/images/show/decoration/show/BowTieTail.png";
+import decSlide4 from "../../assets/images/show/decoration/show/Cowboy.png";
+import decSlide5 from "../../assets/images/show/decoration/show/Crown.png";
+import decSlide6 from "../../assets/images/show/decoration/show/Dress.png";
+import decSlide7 from "../../assets/images/show/decoration/show/FriedG.png";
+import decSlide8 from "../../assets/images/show/decoration/show/Fries.png";
+import decSlide9 from "../../assets/images/show/decoration/show/GoldenNacklace.png";
+import decSlide10 from "../../assets/images/show/decoration/show/MultiGoldeRings.png";
+import decSlide11 from "../../assets/images/show/decoration/show/PearlMilk.png";
+import decSlide12 from "../../assets/images/show/decoration/show/Scarf01.png";
+import decSlide13 from "../../assets/images/show/decoration/show/Scarf02.png";
+import decSlide14 from "../../assets/images/show/decoration/show/Scarf03.png";
+import decSlide15 from "../../assets/images/show/decoration/show/Seaweed.png";
+import decSlide16 from "../../assets/images/show/decoration/show/Splash.png";
+import decSlide17 from "../../assets/images/show/decoration/show/TailRing.png";
 
 import effect1 from "../../assets/images/show/effect/ColorSpot.png";
 import effect2 from "../../assets/images/show/effect/RedWave.png";
@@ -106,6 +123,25 @@ const backgrounds = [
   { id: 8, name: "Yellow", src: bg8.src },
 ];
 
+const decorationsSlide = [
+  { id: 1, name: "BowTieHead", src: decSlide1.src },
+  { id: 2, name: "BowTieNeck", src: decSlide2.src },
+  { id: 3, name: "BowTieTail", src: decSlide3.src },
+  { id: 4, name: "Cowboy", src: decSlide4.src },
+  { id: 5, name: "Crown", src: decSlide5.src },
+  { id: 6, name: "Dress", src: decSlide6.src },
+  { id: 7, name: "FriedG", src: decSlide7.src },
+  { id: 8, name: "Fries", src: decSlide8.src },
+  { id: 9, name: "GoldenNacklace", src: decSlide9.src },
+  { id: 10, name: "MultiGoldeRings", src: decSlide10.src },
+  { id: 11, name: "PearlMilk", src: decSlide11.src },
+  { id: 12, name: "Scarf01", src: decSlide12.src },
+  { id: 13, name: "Scarf02", src: decSlide13.src },
+  { id: 14, name: "Scarf03", src: decSlide14.src },
+  { id: 15, name: "Seaweed", src: decSlide15.src },
+  { id: 16, name: "Splash", src: decSlide16.src },
+  { id: 17, name: "TailRing", src: decSlide17.src },
+];
 const decorations = [
   { id: 1, name: "BowTieHead", src: dec1.src },
   { id: 2, name: "BowTieNeck", src: dec2.src },
@@ -171,7 +207,7 @@ export default function ShowPage() {
           borderRadius="10px"
           marginTop={"16px"}
         >
-          可隨意切換物件展示各種造型
+          Select items to show your type
         </Box>
         {/* 電腦版 */}
         <Box
@@ -194,37 +230,40 @@ export default function ShowPage() {
           >
             <Flex gridArea="body1" justifyContent={"center"} textAlign="center">
               <Flex flexDirection="column" fontSize="20px">
-                身體 {bodyId}
+                Body {bodyId}
                 <SwiperItem options={bodys} triggle={setBodyId} />
               </Flex>
             </Flex>
             <Flex gridArea="body2" justifyContent={"center"} textAlign="center">
               <Flex flexDirection="column" fontSize="20px">
-                球 {ballId}
+                Ball {ballId}
                 <SwiperItem options={balls} triggle={setBallId} />
               </Flex>
             </Flex>
             <Flex gridArea="body3" justifyContent={"center"} textAlign="center">
               <Flex flexDirection="column" fontSize="20px">
-                眼睛 {eyeId}
+                Eyes {eyeId}
                 <SwiperItem options={eyes} triggle={setEyeId} />
               </Flex>
             </Flex>
             <Flex gridArea="body4" justifyContent={"center"} textAlign="center">
               <Flex flexDirection="column" fontSize="20px">
-                背景 {backgroundId}
+                Background {backgroundId}
                 <SwiperItem options={backgrounds} triggle={setBackgroundId} />
               </Flex>
             </Flex>
             <Flex gridArea="body5" justifyContent={"center"} textAlign="center">
               <Flex flexDirection="column" fontSize="20px">
-                配件 {decorationId}
-                <SwiperItem options={decorations} triggle={setDecorationId} />
+                Decoration {decorationId}
+                <SwiperItem
+                  options={decorationsSlide}
+                  triggle={setDecorationId}
+                />
               </Flex>
             </Flex>
             <Flex gridArea="body6" justifyContent={"center"} textAlign="center">
               <Flex flexDirection="column" fontSize="20px">
-                特效 {effectId}
+                Effects {effectId}
                 <SwiperItem options={effects} triggle={setEffectId} />
               </Flex>
             </Flex>

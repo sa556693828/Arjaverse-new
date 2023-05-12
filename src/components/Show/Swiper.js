@@ -14,7 +14,7 @@ export default function SwiperItem(props) {
   const { options, triggle } = props;
 
   return (
-    <Flex width={"200px"} height={"200px"} justifyContent={"center"}>
+    <Flex width={"400px"} height={"200px"} justifyContent={"center"}>
       <Swiper
         slidesPerView={1}
         modules={[Navigation]}
@@ -25,8 +25,15 @@ export default function SwiperItem(props) {
       >
         {options.map((item, index) => (
           <SwiperSlide key={item.id} virtualIndex={index}>
-            <Box width={"200px"} height={"100%"} justifyContent={"center"}>
-              <Image src={item.src} width={"100%"} height={"100%"} />
+            <Box
+              width={"400px"}
+              height={"100%"}
+              display={"flex"}
+              justifyContent={"center"}
+            >
+              <div className="flex w-1/2 justify-center bg-[#C5C5C5] rounded-[40px] p-4 border-4">
+                <Image src={item.src} width={"100%"} height={"100%"} />
+              </div>
             </Box>
           </SwiperSlide>
         ))}

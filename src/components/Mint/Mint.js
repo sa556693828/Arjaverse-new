@@ -15,7 +15,7 @@ export default function Mint() {
             <img
               src={text.src}
               alt=""
-              className="w-2/5 absolute left-[10%] md:left-1/4 lg:left-[30%] top-5 z-50"
+              className="w-2/5 absolute left-[10%] md:left-1/4 lg:left-[30%] top-5 z-30"
             />
           </div>
 
@@ -44,7 +44,7 @@ export default function Mint() {
             </div>
           </Box>
         </div>
-        <div className="w-3/4 flex justify-end z-40">
+        <div className="w-3/4 flex justify-end z-20">
           <img
             src={pic.src}
             className="absolute w-9/12 h-full md:w-[60%] lg:w-[48%]"

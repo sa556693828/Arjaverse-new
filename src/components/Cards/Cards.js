@@ -13,7 +13,7 @@ export default function Cards() {
     <div className="w-full">
       <Box className="w-full flex justify-center">
         <Box
-          className="stroke"
+          className="strokeTitle"
           fontWeight={"semibold"}
           fontSize={{ base: "60px", sm: "60px", md: "80px" }}
           marginTop={{ base: "100px", sm: "70px", md: "70px" }}
@@ -33,7 +33,7 @@ export default function Cards() {
           <div className="flex flex-1 items-center justify-center">
             <Image width="650" height="500" src={cha1} />
           </div>
-          <div className="bg-[#FE87BD] text-xs md:text-5xl text-center py-8 rounded-b-2xl md:rounded-b-[40px]">
+          <div className="cardText bg-[#FE87BD] text-white text-xs md:text-5xl text-center py-8 rounded-b-2xl md:rounded-b-[40px]">
             Chubby Seal
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function Cards() {
           <div className="flex flex-1 items-center justify-center">
             <Image width="650" height="650" src={cha2} />
           </div>
-          <div className="bg-[#FE87BD] text-xs md:text-5xl text-center py-8 rounded-b-2xl md:rounded-b-[40px]">
+          <div className="bg-[#FE87BD] text-white text-xs md:text-5xl text-center py-8 rounded-b-2xl md:rounded-b-[40px]">
             Seal Arja
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Cards() {
           <div className="flex flex-1 items-center justify-center">
             <Image width="650" height="500" src={cha3} />
           </div>
-          <div className="bg-[#FE87BD] text-xs md:text-5xl text-center py-8 rounded-b-2xl md:rounded-b-[40px]">
+          <div className="bg-[#FE87BD] text-white text-xs md:text-5xl text-center py-8 rounded-b-2xl md:rounded-b-[40px]">
             Arjaverse
           </div>
         </div>

@@ -1,25 +1,15 @@
 import React, { useState } from "react";
 import {
-  Center,
   Flex,
-  Image,
-  Box,
-  DrawerBody,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   Drawer,
   useDisclosure,
   Button,
-  DrawerFooter,
-  Divider,
 } from "@chakra-ui/react";
-import Logo from "../../assets/images/Logo.png";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useEns } from "../../hooks/useEns.js";
-import { ChevronDownIcon } from "@chakra-ui/icons";
 import LinearButton from "../Button/LinearButton/LinearButton";
 
 export default function Mobile(props) {

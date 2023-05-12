@@ -7,6 +7,7 @@ import Cards from "../components/Cards/Cards";
 import ShowPage from "./show";
 import Marquee from "../components/Marquee/Marquee";
 import Mint from "../components/Mint/Mint";
+import Footer from "../components/Footer/Footer";
 //TODO: add animation
 
 export default function Main() {
@@ -20,6 +21,7 @@ export default function Main() {
         <Marquee />
         <Mint />
         <ShowPage />
+        <Footer />
       </Box>
     </>
   );

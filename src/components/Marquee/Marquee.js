@@ -13,7 +13,7 @@ export default function Marquee() {
   return (
     <div className="h-full overflow-hidden">
       <Box
-        className="stroke w-full text-center"
+        className="strokeTitle w-full text-center"
         fontWeight={"semibold"}
         fontSize={{ base: "60px", sm: "60px", md: "80px" }}
         marginTop={{ base: "100px", sm: "70px", md: "70px" }}

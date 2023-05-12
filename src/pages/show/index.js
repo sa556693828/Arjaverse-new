@@ -150,6 +150,7 @@ export default function ShowPage() {
   return (
     <ContentBg seal={false}>
       <Flex
+        className="strokeTitle"
         width={"100%"}
         justifyContent={"flex-start"}
         alignItems={"center"}
@@ -159,6 +160,7 @@ export default function ShowPage() {
         marginTop={{ base: "20px", sm: "20px", md: "50px" }}
         marginBottom={"50px"}
         flexDirection={"column"}
+        data-stroke="Show Room"
       >
         Show Room
         <Box

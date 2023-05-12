@@ -45,36 +45,13 @@ body {
 
 // titles
 .titles {
-  .strokeTitle {
-    right:0;
-    position: relative;
-    color: #FED0D4;
-    z-index: 4;
-    font-size: 125px;
-    word-wrap: break-word ;
-    .strokeTitle2::before {
-      content: attr(data-stroke);
-      position: absolute;
-      z-index: -1;
-      -webkit-text-stroke: 14px #EC6F91;
-      text-stroke: 14px #EC6F91;
-  }
-  }
-  .strokeTitle::before {
-      content: attr(data-stroke);
-      word-break: break-all;
-      position: absolute;
-      left: 0;
-      z-index: -1;
-      -webkit-text-stroke: 28px #ffffff;
-      text-stroke: 28px #ffffff;
-  }
   .strokeText {
     right:0;
     position: relative;
     color: #FED0D4;
     z-index: 4;
     font-size: 125px;
+    font-family: 'Baloo 2', cursive;
     word-wrap: break-word ;
     .strokeText2::before {
       content: attr(data-stroke);
@@ -87,6 +64,7 @@ body {
   .strokeText::before {
       content: attr(data-stroke);
       position: absolute;
+      font-family: 'Baloo 2', cursive;
       left: 0;
       z-index: -1;
       -webkit-text-stroke: 28px #ffffff;

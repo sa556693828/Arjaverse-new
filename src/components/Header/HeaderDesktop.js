@@ -54,7 +54,7 @@ export default function Desktop(props) {
             className="w-60 rounded-2xl shadow-xl"
           />
           {showGotoMint && (
-            <button className="absolute border-8 border-t-0 right-0 border-white w-64 h-20 text-2xl rounded-3xl text-white font-medium z-40">
+            <button className="absolute border-4 border-t-0 right-0 border-white w-64 h-20 text-2xl rounded-3xl text-white font-medium z-40">
               Go to Mint
             </button>
           )}

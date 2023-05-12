@@ -49,21 +49,40 @@ export default function Mobile(props) {
       </Flex>
       <Drawer isOpen={isOpen} size="xs" placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent className=" bg-gradient-to-b flex gap-4 items-center from-[#9CDEF5] via-[#9CDEF5]  to-[#FF99C7] ">
+        <DrawerContent className="bg-gradient-to-b flex gap-4 items-center from-[#9CDEF5] via-[#9CDEF5]  to-[#FF99C7] ">
           <div className="my-4">
-            <LinearButton text="Connect Wallet" />
-
+            <LinearButton text="Connect Wallet" className="w-60 rounded-2xl" />
           </div>
-          <div className="strokeMobileNavbar w-full bg-white  h-11 flex items-center justify-center"
-            data-stroke="Go to mint"  >Go to mint</div>
-          <div className="strokeMobileNavbar w-full   h-11 flex items-center justify-center"
-            data-stroke="Story"  >Story</div>
-          <div className="strokeMobileNavbar w-full   h-11 flex items-center justify-center"
-            data-stroke="About"  >About</div>
-          <div className="strokeMobileNavbar w-full   h-11 flex items-center justify-center"
-            data-stroke="Seals"  >Seals</div>
-          <div className="strokeMobileNavbar w-full   h-11 flex items-center justify-center"
-            data-stroke="ShowRoom"  >ShowRoom</div>
+          <div
+            className="strokeMobileNavbar w-full bg-white h-11 flex items-center justify-center"
+            data-stroke="Go to mint"
+          >
+            Go to mint
+          </div>
+          <div
+            className="strokeMobileNavbar w-full h-11 flex items-center justify-center"
+            data-stroke="Story"
+          >
+            Story
+          </div>
+          <div
+            className="strokeMobileNavbar w-full h-11 flex items-center justify-center"
+            data-stroke="About"
+          >
+            About
+          </div>
+          <div
+            className="strokeMobileNavbar w-full h-11 flex items-center justify-center"
+            data-stroke="Seals"
+          >
+            Seals
+          </div>
+          <div
+            className="strokeMobileNavbar w-full h-11 flex items-center justify-center"
+            data-stroke="ShowRoom"
+          >
+            ShowRoom
+          </div>
         </DrawerContent>
       </Drawer>
     </>

@@ -13,28 +13,26 @@ export default function Desktop(props) {
       <Flex align="center" onClick={() => goPage("/")} cursor={"pointer"}>
         <Image
           src={Logo.src}
-          width={{ base: "50px", sm: "60px", md: "auto" }}
-          height={{ base: "40px", sm: "auto", md: "auto" }}
+          paddingY="2"
+          width={{ base: "50px", sm: "60px" }}
+          height={{ base: "60px", sm: "70px" }}
         />
         <Box className="text-[#FE87BD] font-extrabold text-2xl md:w-auto leading-6">
           Into The Arjaverse!
         </Box>
       </Flex>
       <Flex
-        className="text-white"
-        gap="4"
-        justifyContent={"space-evenly"}
-        display={{ base: "none", lg: "flex" }}
+        className="text-white hidden lg:flex justify-center"
+        gap="3"
+        width="60%"
       >
         <button className={buttonStyle}>Story</button>
         <button className={buttonStyle}>About</button>
         <button className={buttonStyle}>Seals</button>
         <button className={buttonStyle}>ShowRoom</button>
       </Flex>
-
-      <div>
+      <div className="pl-3 hidden lg:block">
         <div
-          className="hidden lg:block"
           onMouseEnter={() => {
             setShowGotoMint(true);
           }}
@@ -50,8 +48,6 @@ export default function Desktop(props) {
             </button>
           )}
         </div>
-
-
       </div>
     </>
   );

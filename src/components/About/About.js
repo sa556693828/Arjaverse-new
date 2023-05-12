@@ -13,7 +13,7 @@ export default function About() {
         className="flex justify-center"
         mx="24"
       >
-        <div className=" flex flex-col relative rounded-3xl bg-[#FE87BD] p-10 h-fit text-4xl font-bold text-center gap-4">
+        <div className="flex flex-col relative rounded-3xl bg-[#FE87BD] p-10 h-fit text-4xl font-bold text-center gap-4 mx-2">
           <div
             className="stroke"
             data-stroke="A planet with many seals - Arjaverse was born!"

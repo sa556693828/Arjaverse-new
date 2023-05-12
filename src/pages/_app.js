@@ -81,7 +81,7 @@ function MyApp({ Component, pageProps }) {
             <ChakraProvider theme={theme}>
               <Provider>
                 <Header />
-                <div className="pt-20">
+                <div className="pt-[70px]">
                   <Component {...pageProps} />
                 </div>
               </Provider>

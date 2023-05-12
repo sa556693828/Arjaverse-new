@@ -132,9 +132,9 @@ body {
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
 
-  .dashboard {
-    min-height: 100vh;
-  }
+  // .dashboard {
+  //   min-height: 50vh;
+  // }
 
   .waves {
     height: 100px;

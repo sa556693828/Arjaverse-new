@@ -6,9 +6,7 @@ import Wave from "./Wave";
 export default function NewBg(props) {
   return (
     <Flex
-      minHeight={{ base: "100vh" }}
-      height={"100%"}
-      justifyContent="center"
+      justifyContent="start"
       position="relative"
       overflow="hidden"
       bgRepeat="no-repeat"
@@ -18,7 +16,7 @@ export default function NewBg(props) {
       className="flex flex-col"
     >
       <div>{props.children}</div>
-      <Flex className="dashboard h-[40vh]" flexDirection="column" w="full">
+      <Flex className="h-[40vh]" flexDirection="column" w="full">
         <Wave className="z-20" />
         <div className="wave-bot z-20" />
       </Flex>

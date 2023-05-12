@@ -7,7 +7,7 @@
   background: linear-gradient(90deg,#D0F3F6 20%,#F59CC8 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 1;
   z-index: 4;
@@ -16,19 +16,30 @@
   content: attr(data-stroke);
   position: absolute;
   /* z-index: -1; */
-  -webkit-text-stroke: 0.5rem #ffffff;
+  -webkit-text-stroke: 0.2rem #ffffff;
 }
 
-
-.stroke {
-  background: -webkit-linear-gradient(180deg,#D0F3F6 20%,#F59CC8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 6rem;
-  font-weight: 800;
-  -webkit-text-stroke: 6px #fff; /* Safari/Chrome */
-  text-stroke: 2px #F59CC8;
+@media (min-width: 640px) { 
+  .strokeX {
+    /* font-family:'Permanent Marker' ,'Palanquin Dark'; */
+    color: transparent;
+    background: linear-gradient(90deg,#D0F3F6 20%,#F59CC8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    z-index: 4;
+  }
+  .strokeX::before {
+    content: attr(data-stroke);
+    position: absolute;
+    /* z-index: -1; */
+    -webkit-text-stroke: 0.4rem #ffffff;
+  }
+  
 }
+
 
 @keyframes marquee {
   0% {

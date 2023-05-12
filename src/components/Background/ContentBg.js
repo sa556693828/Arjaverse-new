@@ -9,7 +9,7 @@ export default function ContentBg(props) {
       position="relative"
       bgImage={sun.src}
       bgRepeat="no-repeat"
-      bgPos="center"
+      bgPos="top"
       bgSize="cover"
     >
       {props.children}

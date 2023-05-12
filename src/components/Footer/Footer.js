@@ -19,9 +19,9 @@ export default function Footer() {
       justifyContent="start"
       position="relative"
       overflow="hidden"
-      className="flex flex-col"
+      className="flex flex-col "
     >
-      <Flex className="h-[40vh]" flexDirection="column" w="full">
+      <Flex className="h-[40vh] md:h-[70vh]" flexDirection="column" w="full">
         <Wave className="z-20" />
 
         <div className="wave-bot z-20 flex justify-center">
@@ -29,9 +29,9 @@ export default function Footer() {
             <div className="strokeFooter" data-stroke="Follow us!">
               Follow us!
             </div>
-            <div className="flex gap-10">
-              <Image src={ig.src} w="100px" h="100px" />
-              <Image src={op.src} w="100px" h="100px" />
+            <div className="flex gap-10  md:mr-20  lg:mt-10 ">
+              <Image src={ig.src} className="w-14 h-14  md:w-20 md:h-20  lg:w-24 lg:h-24" />
+              <Image src={op.src} className="w-14	h-14  md:w-20 md:h-20 lg:w-24 lg:h-24" />
             </div>
           </div>
         </div>

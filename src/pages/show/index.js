@@ -40,6 +40,7 @@ export default function ShowPage() {
 
   return (
     <ContentBg seal={false}>
+      <div id="showroom" />
       <Flex
         className="strokeTitle"
         width={"100%"}

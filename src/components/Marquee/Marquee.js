@@ -11,7 +11,7 @@ export default function Marquee() {
   const secondHalf = data.slice(data.length / 2);
 
   return (
-    <div className="h-full overflow-hidden">
+    <div className="h-full overflow-hidden" id="seals">
       <Box
         className="strokeTitle w-full text-center"
         fontWeight={"semibold"}

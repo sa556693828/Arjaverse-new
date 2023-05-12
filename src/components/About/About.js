@@ -6,6 +6,7 @@ import Cards from "../Cards/Cards";
 export default function About() {
   return (
     <AboutBg>
+      <div id="about" />
       <Box
         fontWeight={"semibold"}
         zIndex="3"

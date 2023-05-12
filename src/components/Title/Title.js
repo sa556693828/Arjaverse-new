@@ -5,6 +5,7 @@ import Background from "../Background/Background";
 export default function Title() {
   return (
     <Background>
+      <div id="story"></div>
       <Box
         className="titles"
         fontWeight={"semibold"}

@@ -2,7 +2,7 @@
   animation: marquee 20s linear infinite alternate;
 }
 .strokeX {
-  /* font-family:'Permanent Marker' ,'Palanquin Dark'; */
+  font-family:'Permanent Marker' ,'Palanquin Dark';
   color: transparent;
   background: linear-gradient(90deg,#D0F3F6 20%,#F59CC8 100%);
   -webkit-background-clip: text;
@@ -21,7 +21,7 @@
 
 @media (min-width: 640px) { 
   .strokeX {
-    /* font-family:'Permanent Marker' ,'Palanquin Dark'; */
+    font-family:'Permanent Marker' ,'Palanquin Dark';
     color: transparent;
     background: linear-gradient(90deg,#D0F3F6 20%,#F59CC8 100%);
     -webkit-background-clip: text;

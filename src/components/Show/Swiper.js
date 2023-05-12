@@ -48,7 +48,7 @@ export default function SwiperItem(props) {
                   bgSize="cover"
                 />
               ) : (
-                <div className="flex w-1/2 justify-center bg-[#C5C5C5] rounded-md p-4 border-4 border-[#FE87BD]">
+                <div className="flex w-1/2 justify-center bg-[#C5C5C5] rounded-[40px] p-4 border-4 border-[#FE87BD]">
                   <Image src={item.src} width="auto" />
                 </div>
               )}
@@ -56,6 +56,6 @@ export default function SwiperItem(props) {
           </SwiperSlide>
         ))}
       </Swiper>
-    </Flex >
+    </Flex>
   );
 }

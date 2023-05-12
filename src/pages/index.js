@@ -12,7 +12,7 @@ import Footer from "../components/Footer/Footer";
 
 export default function Main() {
   return (
-    <>
+    <div className="w-full">
       <VideoBg />
       <Title />
       <Box background="linear-gradient(180deg, #81CDF3 0%, #CEE2D6 43.74%)">
@@ -23,6 +23,6 @@ export default function Main() {
         <ShowPage />
         <Footer />
       </Box>
-    </>
+    </div>
   );
 }

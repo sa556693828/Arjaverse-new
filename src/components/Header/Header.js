@@ -32,7 +32,6 @@ export default function Header() {
       align="center"
       px={{ base: "8px", sm: "2.5rem", md: "2.5rem" }}
       py={{ base: "8px", sm: "8px", md: "8px" }}
-      // overflow="hidden"
       className="fixed z-50 w-full bg-white shadow-top"
     >
       <Desktop goPage={goPage} ifAddressHasNFT={ifAddressHasNFT} />

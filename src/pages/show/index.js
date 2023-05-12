@@ -40,15 +40,14 @@ export default function ShowPage() {
 
   return (
     <>
-      <div
-
+      <Box
         width={"100%"}
         className=" top-6 md:top-16 text-center strokeTitle"
         justifyContent={"center"}
         data-stroke="Show Room"
       >
         Show Room
-      </div>
+      </Box>
       <ContentBg seal={false}>
         <div id="showroom" />
         <Flex
@@ -77,7 +76,7 @@ export default function ShowPage() {
             width={"100%"}
             color={"black"}
             marginTop={"20px"}
-            display={{ base: "none", md: "none", lg: "block" }}
+            display={{ base: "none", md: "none", lg: "none", xl: "block" }}
           >
             <Grid
               gridTemplateColumns={{
@@ -91,26 +90,58 @@ export default function ShowPage() {
               }}
               gap={4}
             >
-              <Flex gridArea="body1" justifyContent={"center"} textAlign="center">
-                <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
+              <Flex
+                gridArea="body1"
+                justifyContent={"center"}
+                textAlign="center"
+              >
+                <Flex
+                  flexDirection="column"
+                  fontSize="30px"
+                  textColor="#FE87BD"
+                >
                   Body {bodyId}
                   <SwiperItem options={bodysSlide} triggle={setBodyId} />
                 </Flex>
               </Flex>
-              <Flex gridArea="body2" justifyContent={"center"} textAlign="center">
-                <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
+              <Flex
+                gridArea="body2"
+                justifyContent={"center"}
+                textAlign="center"
+              >
+                <Flex
+                  flexDirection="column"
+                  fontSize="30px"
+                  textColor="#FE87BD"
+                >
                   Ball {ballId}
                   <SwiperItem options={balls} triggle={setBallId} />
                 </Flex>
               </Flex>
-              <Flex gridArea="body3" justifyContent={"center"} textAlign="center">
-                <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
+              <Flex
+                gridArea="body3"
+                justifyContent={"center"}
+                textAlign="center"
+              >
+                <Flex
+                  flexDirection="column"
+                  fontSize="30px"
+                  textColor="#FE87BD"
+                >
                   Eyes {eyeId}
                   <SwiperItem options={eyesSlide} triggle={setEyeId} />
                 </Flex>
               </Flex>
-              <Flex gridArea="body4" justifyContent={"center"} textAlign="center">
-                <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
+              <Flex
+                gridArea="body4"
+                justifyContent={"center"}
+                textAlign="center"
+              >
+                <Flex
+                  flexDirection="column"
+                  fontSize="30px"
+                  textColor="#FE87BD"
+                >
                   Background {backgroundId}
                   <SwiperItem
                     options={backgrounds}
@@ -119,8 +150,16 @@ export default function ShowPage() {
                   />
                 </Flex>
               </Flex>
-              <Flex gridArea="body5" justifyContent={"center"} textAlign="center">
-                <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
+              <Flex
+                gridArea="body5"
+                justifyContent={"center"}
+                textAlign="center"
+              >
+                <Flex
+                  flexDirection="column"
+                  fontSize="30px"
+                  textColor="#FE87BD"
+                >
                   Decoration {decorationId}
                   <SwiperItem
                     options={decorationsSlide}
@@ -128,8 +167,16 @@ export default function ShowPage() {
                   />
                 </Flex>
               </Flex>
-              <Flex gridArea="body6" justifyContent={"center"} textAlign="center">
-                <Flex flexDirection="column" fontSize="30px" textColor="#FE87BD">
+              <Flex
+                gridArea="body6"
+                justifyContent={"center"}
+                textAlign="center"
+              >
+                <Flex
+                  flexDirection="column"
+                  fontSize="30px"
+                  textColor="#FE87BD"
+                >
                   Effects {effectId}
                   <SwiperItem
                     options={effectsSlide}
@@ -156,7 +203,13 @@ export default function ShowPage() {
           </Box>
           {/* 手機版 */}
           <Flex
-            display={{ base: "flex", sm: "flex", lg: "none" }}
+            display={{
+              base: "flex",
+              sm: "flex",
+              md: "flex",
+              lg: "flex",
+              xl: "none",
+            }}
             flexDirection={"column"}
             marginTop={{ base: "20px", sm: "20px", lg: "50px" }}
             alignItems="center"
@@ -338,6 +391,5 @@ export default function ShowPage() {
         </Flex>
       </ContentBg>
     </>
-
   );
 }

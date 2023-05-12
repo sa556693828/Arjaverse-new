@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import pic from "../../assets/images/mintPic.png";
-import pic2 from "../../assets/images/mintPic2.png";
+import pic2 from "../../assets/images/pic2.gif";
 import text from "../../assets/images/mintText.png";
 import styles from "./Mint.module.css";
 import LinearButton from "../Button/LinearButton/LinearButton";
@@ -15,7 +15,7 @@ export default function Mint() {
             <img
               src={text.src}
               alt=""
-              className="w-2/5 absolute left-[10%] md:left-1/4 lg:left-[30%] top-5 z-30"
+              className="w-2/5 absolute left-[10%] top-5 z-30"
             />
           </div>
 
@@ -45,14 +45,11 @@ export default function Mint() {
           </Box>
         </div>
         <div className="w-3/4 flex justify-end z-20">
-          <img
-            src={pic.src}
-            className="absolute w-9/12 h-full md:w-[60%] lg:w-[48%]"
-          />
+          <img src={pic.src} className="absolute w-3/4 h-full  lg:w-[75%]" />
           <img
             src={pic2.src}
             alt=""
-            className="w-full h-full md:w-4/5 lg:w-[64%]"
+            className="w-full h-full lg:w-[100%] rounded-l-[40px] xl:rounded-l-[70px]"
           />
         </div>
       </div>

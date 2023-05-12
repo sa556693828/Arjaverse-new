@@ -74,6 +74,21 @@ h5 {
     font-family: 'Cherry Cream Soda', cursive;
     -webkit-text-stroke: 15px #ffffff;
 }
+.strokeLet {
+  right:0;
+  position: relative;
+  color: #FE87BD ;
+  z-index: 4;
+  font-family: 'Pacifico', cursive;
+  font-size: 96px;
+}
+.strokeLet::before {
+    content: attr(data-stroke);
+    position: absolute;
+    z-index: -1;
+    font-family: 'Pacifico', cursive;
+    -webkit-text-stroke: 15px #ffffff;
+}
 .strokeFooter {
   right:0;
   position: relative;

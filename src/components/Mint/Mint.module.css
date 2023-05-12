@@ -1,7 +1,7 @@
 .marquee-text {
   animation: marquee 20s linear infinite alternate;
 }
-.stroke {
+.strokeX {
   /* font-family:'Permanent Marker' ,'Palanquin Dark'; */
   color: transparent;
   background: linear-gradient(90deg,#D0F3F6 20%,#F59CC8 100%);
@@ -12,11 +12,22 @@
   line-height: 1;
   z-index: 4;
 }
-.stroke::before {
+.strokeX::before {
   content: attr(data-stroke);
   position: absolute;
   /* z-index: -1; */
   -webkit-text-stroke: 0.5rem #ffffff;
+}
+
+
+.stroke {
+  background: -webkit-linear-gradient(180deg,#D0F3F6 20%,#F59CC8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+  font-weight: 800;
+  -webkit-text-stroke: 6px #fff; /* Safari/Chrome */
+  text-stroke: 2px #F59CC8;
 }
 
 @keyframes marquee {
